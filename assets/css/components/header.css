@@ -25,7 +25,6 @@
     align-items: center;
 }
 
-/* Logo - Ocultamos el span en móvil según tu lógica */
 .logo {
     display: flex;
     align-items: center;
