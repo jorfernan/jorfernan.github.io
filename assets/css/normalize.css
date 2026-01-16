@@ -75,7 +75,7 @@ footer { grid-area: footer; min-height: 60px; background: #f59e0b; }
 
 @media only screen and (min-width: 992px) {
   body {
-    grid-template-columns: 450px 1fr;
+    grid-template-columns: 280px 1fr;
     max-width: 2400px;
     margin: 0 auto;
   }
