@@ -13,16 +13,16 @@
 
 }
 
-/* Contenedor Grid */
+/* Contenedor Grid Arreglado */
 .grid-container {
-    width: 80%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 25px;
-    max-width: 1200px;
-    margin: 0 auto;
     padding: 1.8rem;
-    
+    box-sizing: border-box;
 }
 
 /* Estilo de la Carta */
@@ -35,6 +35,7 @@
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .product-card:hover {
@@ -45,11 +46,16 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+    display: block;
 }
 
 .product-info {
     padding: 15px;
     text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .category {
@@ -81,20 +87,34 @@
         flex-direction: column;
         align-items: center;
     }
+
+
     .grid-container {
-        width: 80%;
-        /* Forzamos una sola columna que ocupa el 100% */
-        grid-template-columns: 1fr; 
-        gap: 15px; 
-        padding: 10px; 
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 15px;
     }
 
+    .product-card {
+        width: 100%;
+        padding: 1rem;
+    }
     .product-image {
-        height: 250px; /* Podemos hacer la imagen un poco más alta en móvil */
-        object-fit: contain;
+        height: 250px;
     }
 
-    .store-header h1 {
-        font-size: 1.8rem;
+    .store-header {
+        margin: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
+
