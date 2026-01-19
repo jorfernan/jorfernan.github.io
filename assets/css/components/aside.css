@@ -1,0 +1,120 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.widget {
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+
+    font-family: "Rubik", sans-serif;
+    width: 90%;
+    min-height: 100px;
+
+    padding: 1rem;
+    border-radius: 5px;
+    min-width: 200px;
+}
+.widget-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.widget-title h3 {
+    font-size: .8em;
+}
+.price-filter {
+    text-align: center;
+}
+
+.price-filter p {
+    margin: 0.5rem;
+    font-size: 0.8rem;
+}
+#price-range {
+    width: 90%;
+}
+
+.rss-container {
+    margin-top: auto;
+}
+.filter-option {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+.filter-option input {
+    cursor: pointer;
+}
+
+
+/* Estilo general del contenedor de suscripción */
+.rss-container {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-top: auto; /* Para enviarlo al fondo como querías */
+}
+
+/* Título del widget */
+.rss-container h3 {
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Texto descriptivo */
+.rss-container p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Estilo del campo de email */
+.rss-container input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box; /* Importante para que el padding no ensanche el input */
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.rss-container input[type="email"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo del botón */
+.rss-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efectos al pasar el ratón por el botón */
+.rss-container button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.rss-container button:active {
+  transform: translateY(0);
+}
