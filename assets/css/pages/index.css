@@ -68,3 +68,29 @@
     font-weight: bold;
     color: #333;
 }
+
+/* Ajustes para móviles (pantallas menores a 480px) */
+@media (max-width: 480px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .grid-container {
+        width: 80%;
+        /* Forzamos una sola columna que ocupa el 100% */
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        padding: 10px; 
+    }
+
+    .product-image {
+        height: 250px; /* Podemos hacer la imagen un poco más alta en móvil */
+        object-fit: contain;
+    }
+
+    .store-header h1 {
+        font-size: 1.8rem;
+    }
+}
